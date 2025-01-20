@@ -1,0 +1,179 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.page {
+  width: 100% !important;
+  background-color: white!important;
+}
+
+.formContainer {
+  width: 100%;
+  display: flex;
+  position: relative;
+  top: 50px;
+}
+
+.formWrapper {
+  width: 50%;
+}
+
+.formWrapper.middle{
+  margin: auto;
+}
+
+.formInner {
+  margin: 5%;
+}
+
+.formInner h2 {
+  text-align: center;
+  margin-left: -5%;
+}
+
+.formInner textarea {
+  width: 90%;
+}
+
+.result {
+  position: relative;
+  margin: auto;
+  top: 50px;
+}
+
+.result div {
+  margin: auto;
+}
+
+.resultContainer{
+  border: 1px solid black; 
+  margin: auto;
+  width: 21cm;
+}
+
+@media print {
+  body * {
+    display: none;
+  }
+  
+  #printable-content {
+    display: block;
+  }
+}
+
+.btnSelect {
+  margin: 20px;
+  background-color: #cf245f;
+  background-image: linear-gradient(to bottom right, #fcd34d, #ef4444, #ec4899);
+  border: 0;
+  border-radius: .25rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.125rem; /* 18px */
+  font-weight: 600;
+  line-height: 1.75rem; /* 28px */
+  padding: 1rem 1.25rem;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btnSelect:hover {
+  box-shadow: none;
+}
+
+@media (min-width: 1024px) {
+  .btnSelect {
+    font-size: 1.5rem; /* 24px */
+    padding: 1rem 1.5rem;
+    line-height: 2rem; /* 32px */
+  }
+}
+
+
+.btnBack {
+  z-index: 999;
+  background-image: linear-gradient(#0dccea, #0d70ea);
+  border: 0;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: Montserrat,sans-serif;
+  font-size: .9em;
+  margin: 5px;
+  padding: 10px 15px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position: absolute;
+}
+
+.pdfResult {
+  display: flex;
+}
+
+.formWrapper textarea {
+  height: 400px;
+}
+
+.btnShowDialog {
+  top: 60px;
+}
+
+.pageInner {
+  position: relative;
+}
+
+.redText{
+  color: red;
+}
+
+#demo-simple-select {
+  width: 150px;
+}
+
+#radioGroup {
+  display: block;
+  padding-top: 10px;
+}

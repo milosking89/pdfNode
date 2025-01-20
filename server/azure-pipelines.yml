@@ -1,0 +1,25 @@
+# Node.js
+# Build a general Node.js project with npm.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+- main
+
+pool:
+  name: 'Windows Pool'
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '10.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install --ignore-scripts puppeteer
+    npm run build
+    node scripts/install-puppeteer.js
+
+  displayName: 'npm install and build -- milos'
+  env:
+        PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: true
